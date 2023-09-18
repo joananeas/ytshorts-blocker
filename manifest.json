@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "ytshorts-blocker",
+    "version": "1.0",
+  
+    "description": "It blocks the yt shorts url and redirects to the main website everytime.",
+  
+    "icons": {
+      "48": "icons/ytshorts.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
