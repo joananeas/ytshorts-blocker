@@ -15,15 +15,20 @@
         "js": ["main.js"]
       }
     ],
+    
     "permissions": [
         "activeTab",
-        "tabs",
-        "webNavigation",
-        "webRequest",
-        "webRequestBlocking",
-        "storage",
-        "https://*/*",
-        "https://*/*"
-      ]
+        "storage"
+      ],
+    "browser_action": {
+        "default_icon": {
+          "16": "ytshortsblocker-logo.png",
+          "48": "ytshortsblocker-logo.png",
+          "128": "ytshortsblocker-logo.png"
+        },
+        "default_title": "YtShortsBlocker",
+        "default_popup": "control.html"
+      }
+      
   }
   

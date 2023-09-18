@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YtShorts Blocker config.</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            width: 200px;
+            padding: 10px;
+            background-color: #333333;
+            color: white;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>BLOCK 'EM ALL!!</h1>
+    <label for="intervalo">Allowed time ⏳:</label>
+    <input type="text" id="intervalo" placeholder="default - 0 min">
+    <button type="submit" id="guardar">Save 💾</button>
+    <p>Estado de las variables guardadas:</p>
+<div id="estadoVariables">
+    <p>Variable 1: <span id="variable1Estado"></span></p>
+    <p>Variable 2: <span id="variable2Estado"></span></p>
+</div>
+    <script src="control.js"></script>
+</body>
+</html>
