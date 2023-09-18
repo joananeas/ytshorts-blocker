@@ -6,7 +6,7 @@
     "description": "It blocks the yt shorts url and redirects to the main website everytime.",
   
     "icons": {
-      "48": "icons/ytshorts.png"
+      "48": "ytshortsblocker-logo.png"
     },
   
     "content_scripts": [
