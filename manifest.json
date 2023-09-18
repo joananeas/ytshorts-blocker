@@ -15,15 +15,7 @@
         "js": ["main.js"]
       }
     ],
-    "permissions": [
-        "activeTab",
-        "tabs",
-        "webNavigation",
-        "webRequest",
-        "webRequestBlocking",
-        "storage",
-        "https://*/*",
-        "https://*/*"
-      ]
+
+    "permissions": ["activeTab"]
   }
   
