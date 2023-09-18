@@ -1,10 +1,18 @@
 // Joan Aneas (joananeas on Github)
-browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (tab.url.startsWith("https://www.youtube.com/shorts")) {
-      const newUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Redirige siempre a esta URL
-      browser.tabs.update(tabId, { url: newUrl });
-    }
-  });
+function popUp() {
+    alert("¡Hey!\nStop wasting your time SMH...");
+    setTimeout(function(){}, 3000);
+}
 
-  //Debugger
-  //document.body.style.border = "5px solid red";
+function verificarURL() {
+    //Default configuration:
+    if (window.location.href.includes("shorts")) {
+        popUp();
+        window.location.href = "https://www.youtube.com"; //Redirects to yt
+    }
+  }
+  // Establece un intervalo para verificar la URL cada segundo (1000 milisegundos)
+  const intervalo = setInterval(verificarURL, 3 * 1000);
+
+
+

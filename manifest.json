@@ -11,11 +11,19 @@
   
     "content_scripts": [
       {
-        "matches": ["*://*.mozilla.org/*"],
+        "matches": ["<all_urls>"],
         "js": ["main.js"]
       }
     ],
-
-    "permissions": ["activeTab"]
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "https://*/*",
+        "https://*/*"
+      ]
   }
   
